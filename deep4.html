@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <input type="text" placeholder="enter name" id="text1">
+    <br><br>
+    <input type="text" placeholder="enter name" id="text2">
+    <br><br>
+    <input type="button" value="addition" onclick="add()" name="">
+    <input type="button" value="substraction" onclick="sub()" name="">
+    <input type="button" value="multiplication" onclick="multi()" name="">
+    <input type="button" value="divide" onclick="divide()" name="">
+
+    <script>
+        function add() {
+            var x=document.getElementById('text1').value;
+            var y=document.getElementById('text2').value;
+            var z= +x + +y;
+            document.getElementById("demo").innerHTML=z;
+
+        } 
+        function sub() {
+            var x=document.getElementById('text1').value;
+            var y=document.getElementById('text2').value;
+            var z= +x - +y;
+            document.getElementById("demo").innerHTML=z;
+
+        } 
+        function multi() {
+            var x=document.getElementById('text1').value;
+            var y=document.getElementById('text2').value;
+            var z= +x * +y;
+            document.getElementById("demo").innerHTML=z;
+
+        } 
+        function divide() {
+            var x=document.getElementById('text1').value;
+            var y=document.getElementById('text2').value;
+            var z= +x / +y;
+            document.getElementById("demo").innerHTML=z;
+
+        } 
+    </script>
+    
+</body>
+</html>

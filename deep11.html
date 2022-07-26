@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <input type="text" id="num" />
+    <input type="text" id="num1" />
+    <button onclick="check()">submit</button>
+    <script>
+      function check(){
+          var a=document.getElementById("num").value
+          var b=document.getElementById("num1").value
+          for(c=0;+a<=+b;a++){
+              c= +c + +a;
+          }
+          document.getElementById("demo").innerHTML=c
+      }
+
+
+
+
+    // function check(){
+    //      var a=document.getElementById("num1").value
+    //      var b=document.getElementById("num2").value
+    //      var c=0;
+    //      for(a=0;a<=b,a++){
+    //         if()
+    //      }
+    // }
+    </script>
+  </body>
+</html>

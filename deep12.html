@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <input type="number" id="num">
+    <button onclick="check()">submit</button>
+    <script>
+        function check (){
+
+        var a=0,b=1;
+        var c= parseInt(document.getElementById("num").value);
+        var ans="";
+        for(var i=2;i<=c;i++){
+            var d = a + b;
+            a=b;
+            b=d;
+            ans= ans+d+"<br>";
+           
+        }
+        document.getElementById("demo").innerHTML=ans;
+    }
+        
+    </script>
+</body>
+</html> 

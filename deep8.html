@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+   
+    <p id="demo1"></p>
+    <p>check the percentage of your marks</p>
+    <input type="text" id="chemistry" placeholder="chemistry"><br>
+    <input type="text" id="physics" placeholder="physics" ><br>
+    <input type="text" id="maths" placeholder="maths" ><br>
+
+    <input type="button" value="check" onclick="check()"><br>
+
+
+    <input type="text" id="text1" placeholder="Total" >
+    <input type="text" id="text2" placeholder="Percentage" >
+    <input type="text" id="text3" placeholder="Grade" >
+
+    <script>
+      function check(){
+        var x = parseInt(document.getElementById("chemistry").value);
+        var y = parseInt(document.getElementById("physics").value);
+        var z = parseInt(document.getElementById("maths").value);
+        var Total = x + y + z;
+        var final = (Total / 300) * 100;
+        document.getElementById("text1").value =  Total;
+        document.getElementById("text2").value = final ;
+        if(final>80){
+          document.getElementById("text3").value = "A grade";
+        }
+        if(final>=60 && final<=80){
+          document.getElementById("text3").value = "B grade";
+
+        }
+        if(final<60){
+          document.getElementById("text3").value = "c grade";
+        }
+
+      }
+    </script>
+  </body>
+</html>

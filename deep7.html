@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+    <input type="text" id="text1">
+    <button onclick="add()">Submit</button>
+    <script>
+      function add(){
+        var text1=document.getElementById("text1").value;
+        var length=text1.length;
+        var deep= "";
+        if(length>=6 && length<=12){
+          for(i=0; length >i; i++)
+          deep= deep+(text1[i] + "<br>") 
+        } else {
+          alert('unvalid')
+        }
+        document.getElementById("demo").innerHTML=deep;
+      }
+    </script>
+
+</body>
+</html>
